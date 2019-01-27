@@ -1,0 +1,113 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before
+*::after {
+box-sizing: inherit;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+p{ 
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner{
+    width:900px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+nav.conteiner{
+    margin: 76px 0;
+}
+
+section.conteiner {
+    margin-top: 100px;
+}
+
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+.head-1{
+    display: inline-block;
+    margin-left: 166px;
+    color: #25b4f5; 
+}
+.head-2 {
+    display: inline-block;
+    margin-left: 128px;
+}
+.head-3 {
+    display: inline-block;
+    margin-left: 102px;
+}
+.head-4 {
+    display: inline-block;
+    margin-left: 94px;
+}
+
+    .text {
+        font-size: 30px;
+        margin-bottom: 44px;
+        padding: 0;
+    }
+
+article{
+    display: inline-block;
+    width: 420px;
+    margin: 0;
+    padding: 0;
+}
+
+.team-1, .team-3, .team-5{
+    margin-right: 30px;
+}
+.team-3, .team-4 {
+    margin-top: 130px;
+}
+.team-5, .team-6 {
+    margin-top: 140px;
+}
+
+.picture {
+    margin-bottom: 32px;
+}
+
+.load-button {
+    border: 1px solid #dddcd7;
+    padding: 0;
+    width: 164px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    }
+
+    .info {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+
+.button-box{
+    margin: 60px 0;
+    text-align: center;
+}
+
