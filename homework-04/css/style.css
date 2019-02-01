@@ -1,0 +1,168 @@
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.wrapper {
+  width: 1112px;
+  margin: 0 auto;
+  margin-top: 112px;
+}
+
+.navigation {
+  float: right;
+  font-size: 14px;
+  list-style: none;
+}
+
+.page-nav {
+  padding: 38px 0;
+}
+
+.name {
+  color: #605e5e;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+}
+.name::first-letter {
+  color: #1abc9c;
+}
+
+.navigation a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.instrument-1 {
+  margin-right: 34px;
+  color: #1abc9c;
+}
+.instrument-2 {
+  margin-right: 38px;
+  color: #0f0101;
+}
+.instrument-3 {
+  margin-right: 30px;
+  color: #0f0101;
+}
+.instrument-4 {
+  margin-right: 28px;
+  color: #0f0101;
+}
+.instrument-5 {
+  margin-right: 34px;
+  color: #0f0101;
+}
+.instrument-6 {
+  color: #0f0101;
+}
+.navigation li {
+  float: left;
+}
+.product {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 48px;
+  color: #515151;
+  margin-bottom: 130px;
+  padding: 0;
+}
+.case {
+  float: left;
+  width: 255px;
+  height: 320px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.case:hover .wrapper-image {
+  filter: grayscale(0);
+  background-color: #1abc9c;
+}
+.case:hover .info {
+  filter: grayscale(0);
+  background-color: #1abc9c;
+}
+.case:hover .info-m {
+  filter: grayscale(0);
+  background-color: #7fd9c7;
+}
+.wrapper-image {
+  background-color: #e9f0fd;
+}
+
+.info,
+.info-m {
+  display: inline-block;
+}
+.comd {
+}
+.info {
+  width: 200px;
+  height: 38px;
+  background-color: #323232;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+.info-m {
+  width: 55px;
+  height: 38px;
+  background-color: #8c8c8c;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  float: right;
+  margin: 0;
+}
+.section-title {
+  float: left;
+}
+.news {
+  color: #605e5e;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 48px;
+  text-align: center;
+}
+.text {
+  color: #555252;
+  font-size: 18px;
+  padding: 18px 0 50px 0;
+  margin: 0;
+}
+.item {
+  width: 350px;
+  height: 494px;
+  float: left;
+}
+.wrapper-image-1 {
+  margin-right: 34px;
+  padding: 0;
+}
+.text-1 {
+  font-size: 14px;
+  color: #555252;
+  margin: 0;
+  padding: 20px 0;
+}
+.read-button {
+  border: 1px solid #4ec6ab;
+  padding: 0;
+  width: 160px;
+  height: 50px;
+  font-size: 16px;
+  background-color: #4ec6ab;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
