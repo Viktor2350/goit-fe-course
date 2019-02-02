@@ -19,6 +19,8 @@ img {
   float: right;
   font-size: 14px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .page-nav {
@@ -71,8 +73,13 @@ img {
   text-decoration: none;
   font-size: 48px;
   color: #515151;
-  margin-bottom: 130px;
-  padding: 0;
+  padding-bottom: 32px;
+  margin: 0;
+}
+.line-1 {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 92px;
 }
 .case {
   float: left;
@@ -133,6 +140,17 @@ img {
   text-decoration: none;
   font-size: 48px;
   text-align: center;
+  margin-top: 104px;
+  margin-bottom: 32px;
+}
+.line-2 {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.line-3 {
+  margin-top: 14px;
+  margin-bottom: 32px;
 }
 .text {
   color: #555252;
@@ -142,13 +160,10 @@ img {
 }
 .item {
   width: 350px;
-  height: 494px;
+  height: 540px;
   float: left;
 }
-.wrapper-image-1 {
-  margin-right: 34px;
-  padding: 0;
-}
+
 .text-1 {
   font-size: 14px;
   color: #555252;
