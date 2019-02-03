@@ -1,4 +1,7 @@
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
 img {
   display: block;
   max-width: 100%;
@@ -114,13 +117,16 @@ img {
 }
 
 .info {
+  box-sizing: border-box;
   width: 200px;
   height: 38px;
   background-color: #323232;
   font-size: 18px;
   text-transform: uppercase;
   color: white;
-  
+  line-height: 38px;
+  vertical-align: middle;
+  padding-left: 14px;
   margin: 0;
 }
 .info-m {
@@ -132,6 +138,8 @@ img {
   text-align: center;
   float: right;
   margin: 0;
+  line-height: 38px;
+  vertical-align: middle;
 }
 .section-title {
   float: left;
