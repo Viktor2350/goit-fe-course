@@ -1,6 +1,5 @@
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 img {
   display: block;
@@ -24,6 +23,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-right: 245px;
 }
 .page-nav {
   padding: 38px 0;
@@ -67,17 +67,30 @@ img {
 .navigation li {
   float: left;
 }
-
-.slider-foto {
+.image-slider {
   position: relative;
+}
+.slider-foto {
   width: 1600px;
   height: 600px;
 }
-.slider-infoto-1 {
+
+.slider-but {
   position: absolute;
-  left: 245px;
-  top: 225px;
+  border: none;
+  background-color: rgb(78, 198, 171);
+  opacity: 0.651;
+  width: 104px;
+  height: 104px;
 }
+.slider-left {
+  left: 245px;
+  top: 226px;
+}
+.slider-right {
+  right: 0;
+}
+
 .text-1 {
   position: absolute;
   left: 430px;
@@ -87,7 +100,7 @@ img {
   color: #fff;
   padding: 0;
   margin: 0 auto;
-  
+  padding-bottom: 36px;
 }
 .text-2 {
   position: absolute;
@@ -96,30 +109,21 @@ img {
   text-transform: uppercase;
   font-size: 24px;
   color: #f5f3f3;
-  padding-top: 36px;
   margin: 0 auto;
 }
-.slider-infoto-2 {
-  position: absolute;
-  right: 244px;
-  top: 225px;
-}
-
 .case {
   width: 255px;
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
   padding: 0;
-  display: inline-block;
 }
 .case-1 {
   margin: 0;
   padding: 0;
-  margin-right: 245px;
 }
-.case-2 {
-  margin-left: 245px;
+.case:hover .image-col {
+  opacity: 0.549;
 }
 .case:hover .wrapper-image {
   filter: grayscale(0);
@@ -139,42 +143,32 @@ img {
 }
 .image-col {
   position: absolute;
-  width: 255px;
-  height: 282px;
+  width: 235px;
+  height: 262px;
   border-width: 10px;
   border-color: rgb(255, 255, 255);
   border-style: solid;
   background-color: rgb(0, 0, 0);
   opacity: 0;
   margin: 0;
+  z-index: 1;
 }
-.case:hover .image-col {
-  opacity: 0.549;
+.image-col-1,
+.image-col-2,
+.image-col-3,
+.image-col-4 {
+  display: inline-block;
+  margin: 0 auto;
+  padding-top: 78px;
+  padding-right: 6px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.image-col-1 {
+  padding-left: 34px;
+}
+.image-col-4 {
+  padding-top: 6px;
+  padding-left: 36px;
+}
 
 .info,
 .info-m {
@@ -209,9 +203,9 @@ img {
 .section-title {
   float: left;
   background: #e9f0fd;
+  width: 1600px;
 }
 .news {
-  
   color: #605e5e;
   text-transform: uppercase;
   text-decoration: none;
@@ -242,11 +236,19 @@ img {
   text-align: center;
   background-color: #323232;
 }
+.text-item {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 36px;
+}
 .text-f {
+  display: inline-block;
   color: #fefefe;
   font-size: 16px;
 }
 .text-f-1 {
+  display: inline-block;
+  margin: 0 auto;
   font-size: 16px;
   color: #46bfa9;
 }
