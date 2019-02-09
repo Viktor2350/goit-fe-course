@@ -86,16 +86,16 @@ img {
   height: 104px;
 }
 .slider-left {
-  left: 245px;
+  left: 125px;
   top: 228px;
 }
 .slider-right {
-  right: 245px; 
+  right: 125px; 
   top: 228px;
 }
 .text-infoto {
   position: absolute;
-  left: 428px;
+  left: 300px;
   top: 220px;
 }
 .text-1 {
@@ -175,7 +175,7 @@ img {
 }
 .mimage-mar {
   margin-left: 245px;
-  max-width: 1100px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -210,7 +210,6 @@ img {
   vertical-align: middle;
 }
 .section-title {
-  float: left;
   background: #e9f0fd;
   width: 100%;
 }
@@ -239,13 +238,16 @@ img {
   padding: 18px 0 50px 0;
   margin: 0;
 }
+footer {
+  background-color: #323232;
+}
 .footer {
-  display: inline-block;
   max-width: 1100px; 
   margin: 0 auto;
   height: 88px;
   text-align: center;
   background-color: #323232;
+  
 }
 .text-item {
   display: inline-block;
