@@ -95,8 +95,12 @@ img {
 }
 .text-infoto {
   position: absolute;
-  left: 300px;
+  left: 0;
   top: 220px;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1110px;
+  text-align: center;
 }
 .text-1 {
   text-transform: uppercase;
@@ -174,7 +178,6 @@ img {
   padding-left: 36px;
 }
 .mimage-mar {
-  margin-left: 245px;
   max-width: 1110px;
   margin: 0 auto;
 }
@@ -246,7 +249,6 @@ footer {
   margin: 0 auto;
   height: 88px;
   text-align: center;
-  background-color: #323232;
   
 }
 .text-item {
