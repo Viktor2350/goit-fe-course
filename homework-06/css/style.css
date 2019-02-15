@@ -1,0 +1,287 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.navigation {
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page-nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 50px;
+}
+.name {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.navi a:hover {
+  color: #f38181;
+}
+
+a {
+  position: relative;
+}
+
+a::after {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #f38181;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+
+a:hover:after,
+a:focus:after {
+  transform: scaleX(1);
+}
+.navigation a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.instrument-1 {
+  position: relative;
+  color: #1abc9c;
+  margin: 0;
+  margin-right: 60px;
+}
+.instrument-2 {
+  margin: 0;
+  padding: 0;
+}
+
+.image-col {
+  position: absolute;
+  width: 235px;
+  height: 262px;
+  border-width: 10px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+  margin: 0;
+  z-index: 1;
+}
+.image-col-1 {
+  padding-left: 34px;
+}
+.image-col-4 {
+  padding-top: 6px;
+  padding-left: 36px;
+}
+
+.section-title-1 {
+  width: 100%;
+  margin-top: 130px;
+  margin-left: 10px;
+}
+.section-title-2 {
+  width: 100%;
+}
+
+.service-text {
+  color: #000;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  margin: 0;
+  padding-bottom: 26px;
+  line-height: 28px;
+}
+
+.news {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+  padding-bottom: 42px;
+  margin: 0;
+}
+.text-team {
+  padding: 46px 130px 96px;
+  margin: 0;
+  font-size: 15px;
+  text-align: center;
+  color: #555252;
+}
+.line-2 {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 94px;
+}
+.service-bloc {
+  position: relative;
+  width: 382px;
+  height: 80px;
+  padding: 0;
+  margin-bottom: 102px;
+}
+.service-bloc-item {
+  margin: 0;
+}
+.text-bloc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  margin-left: 80px;
+}
+.textin-1 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 22px;
+}
+.textin-2 {
+  width: 330px;
+  font-size: 15px;
+  margin: 0;
+  color: #555252;
+}
+
+.foto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.foto-inimage {
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  background-image: linear-gradient(red, yellow);
+  box-shadow: 10px 10px 0px #95e1d3;
+  opacity: 0;
+  margin: 0;
+  z-index: 1;
+}
+.foto-inimage-1,
+.foto-inimage-2,
+.foto-inimage-3,
+.foto-inimage-4 {
+  display: inline-block;
+  margin: 0 auto;
+  transform: translate(76px, 208px);
+}
+
+.image:hover .foto-inimage,
+.image:focus .foto-inimage {
+  opacity: 0.55;
+}
+
+.image:hover .foto-inimage-1{
+  opacity: 1;
+  color: blue;
+}
+
+.fotoo {
+  position: relative;
+}
+
+.image-team-1 {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+}
+.image-text-1 {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  min-height: 64px;
+  padding-top: 86px;
+  padding-bottom: 26px;
+}
+
+.text-item {
+  position: absolute;
+  left: 0;
+}
+input {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+}
+
+.text-f {
+  color: #fefefe;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+}
+.text-f-1 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #f6a1a1;
+}
+.but-fut {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  color: #ffff;
+  text-transform: uppercase;
+  border: none;
+}
