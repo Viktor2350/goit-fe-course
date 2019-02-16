@@ -79,25 +79,7 @@ a:focus:after {
   padding: 0;
 }
 
-.image-col {
-  position: absolute;
-  width: 235px;
-  height: 262px;
-  border-width: 10px;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
-  background-color: rgb(0, 0, 0);
-  opacity: 0;
-  margin: 0;
-  z-index: 1;
-}
-.image-col-1 {
-  padding-left: 34px;
-}
-.image-col-4 {
-  padding-top: 6px;
-  padding-left: 36px;
-}
+
 
 .section-title-1 {
   width: 100%;
@@ -211,15 +193,10 @@ a:focus:after {
   opacity: 0.55;
 }
 
-.image:hover .foto-inimage-1{
-  opacity: 1;
-  color: blue;
-}
 
 .fotoo {
   position: relative;
 }
-
 .image-team-1 {
   font-size: 14px;
   text-transform: uppercase;
