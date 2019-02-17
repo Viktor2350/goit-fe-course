@@ -171,29 +171,46 @@ a:focus:after {
 
 .foto-inimage {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 380px;
   height: 470px;
-  background-image: linear-gradient(red, yellow);
+  background-image: -moz-linear-gradient( 90deg, rgba(252,227,138,0.3) 0%, rgba(243,129,129,0.3) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138,0.3) 0%, rgba(243,129,129,0.3) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgba(252,227,138,0.3) 0%, rgba(243,129,129,0.3) 100%);
   box-shadow: 10px 10px 0px #95e1d3;
-  opacity: 0;
+  visibility: hidden;
   margin: 0;
   z-index: 1;
 }
-.foto-inimage-1,
-.foto-inimage-2,
-.foto-inimage-3,
-.foto-inimage-4 {
+
+ .image .foto-inimage:hover ,
+ .image .foto-inimage:focus  {
+  visibility: visible;
+}
+
+
+.foto-inimage-wrapper:hover {
+  cursor: pointer;
+  background: #95e1d3;
+}
+
+.foto-inimage-1 {
   display: inline-block;
   margin: 0 auto;
-  transform: translate(76px, 208px);
+  vertical-align: middle;
 }
-
-
-.image .foto-inimage:hover ,
-.image .foto-inimage:focus  {
-  opacity: 0.55;
+.foto-inimage-wrapper {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background: yellow;
+  text-align: center;
+  line-height: 55px;
+  vertical-align: middle;
+  margin-right: 1px;
 }
-
 
 .fotoo {
   position: relative;
