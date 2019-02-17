@@ -188,8 +188,9 @@ a:focus:after {
   transform: translate(76px, 208px);
 }
 
-.image:hover .foto-inimage,
-.image:focus .foto-inimage {
+
+.image .foto-inimage:hover ,
+.image .foto-inimage:focus  {
   opacity: 0.55;
 }
 
