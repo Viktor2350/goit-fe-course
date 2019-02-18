@@ -176,17 +176,15 @@ a:focus:after {
   align-items: center;
   width: 380px;
   height: 470px;
-  background-image: -moz-linear-gradient( 90deg, rgba(252,227,138,0.3) 0%, rgba(243,129,129,0.3) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138,0.3) 0%, rgba(243,129,129,0.3) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgba(252,227,138,0.3) 0%, rgba(243,129,129,0.3) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.7) 100%);
   box-shadow: 10px 10px 0px #95e1d3;
   visibility: hidden;
-  margin: 0;
   z-index: 1;
+  margin: 0;
 }
 
- .image .foto-inimage:hover ,
- .image .foto-inimage:focus  {
+ .image:hover .foto-inimage,
+ .image:focus .foto-inimage {
   visibility: visible;
 }
 
