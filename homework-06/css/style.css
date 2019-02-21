@@ -20,6 +20,7 @@ img {
 
 .wrapper {
   margin: 0 auto;
+  margin-bottom: 114px;
 }
 
 .navigation {
@@ -192,6 +193,8 @@ a:focus:after {
 .foto-inimage-wrapper:hover {
   cursor: pointer;
   background: #95e1d3;
+  transform: translate(-10px, -10px);
+
 }
 
 .foto-inimage-1 {
@@ -234,13 +237,23 @@ a:focus:after {
 }
 
 .footer {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   position: relative;
-  min-height: 64px;
-  padding-top: 86px;
   padding-bottom: 26px;
+}
+
+.footer::before {
+  position: absolute;
+   content: '';
+    background-color: rgb(229, 229, 229);
+    width: 100%;
+    height: 1px;
+    top: -26px;
+  
+  
 }
 
 .text-item {
@@ -265,6 +278,12 @@ input {
   margin: 0 auto;
   font-size: 14px;
   color: #f6a1a1;
+}
+::placeholder {
+    font-size: 15px;
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    padding-left: 12px;
 }
 .but-fut {
   display: flex;
