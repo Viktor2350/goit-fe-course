@@ -30,6 +30,8 @@ img {
   margin: 0;
   padding: 0;
   padding-right: 230px;
+  font-style: normal;
+  font-weight: 600;
 
 }
 .page-nav {
@@ -131,16 +133,18 @@ a:focus:after {
   text-align: center;
 }
 .textin-1 {
-  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   margin: 0;
   padding-bottom: 24px;
+  font-weight: 700;
 }
 .textin-2 {
   font-family: "Roboto";
   font-size: 14px;
   margin: 0;
   color: #555252;
+  font-weight: 400;
 }
 .section-title-2 {
   position: relative;
@@ -219,4 +223,6 @@ width: 240px;
 height: 66px;
 border: none;  
 font-size: 18px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
 }
