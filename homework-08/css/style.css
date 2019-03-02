@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 320px;
+  height: 100%;
+  margin: 0 auto;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.head {
+  position: relative;
+}
+
+.but-left {
+  position: absolute;
+  left: 84px;
+  top: 36px;
+  border: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  background:none;
+  cursor: pointer;
+  font-weight: 400;
+}
+.but-right {
+  position: absolute;
+  right: 84px;
+  top: 24px;
+  border: 2px solid #ffffff;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  background:none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 8px;
+  font-weight: 400;
+}
+.head-text-1 {
+  position: absolute;
+  left: 70px;
+  top: 176px;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.head-text-2 {
+  position: absolute;
+  left: -8px;
+  top: 216px;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.head-text-3 {
+  position: absolute;
+  left: 10px;
+  top: 280px;
+  font-size: 18px;
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 35px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.but-center {
+  position: absolute;
+  left: 20px;
+  bottom: 125px;
+  border: 2px solid #ff4e50;
+  background:  #ff4e50;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 17px 50px;
+  margin: 0;
+}
+.section-1 {
+  position: relative;
+}
+.text-section {
+  margin: 0;
+  padding: 74px 30px 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.posit {
+  position: relative;
+}
+.foto-section {
+ 
+  margin: 0 auto;
+}
+.foto-section-1 {
+  position: absolute;
+  right: 94px;
+  bottom: -6px;
+}
+
+.text-s {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.text-section-1 {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  padding: 24px 0 22px;
+  
+}
+.text-section-2 {
+  padding: 0 50px 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.but-sec {
+  position: absolute;
+  left: 20px;
+  bottom: -100px;
+  width: 280px;
+  height: 40px;
+  border: 2px solid #ff4e50;
+  background:  none;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #ff4e50;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 0;
+  margin-bottom: 56px;
+}
