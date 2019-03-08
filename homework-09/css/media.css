@@ -1,0 +1,152 @@
+
+@media (min-width: 750px) {
+  .container {
+    width: 750px;
+    height: auto;
+  }
+  .picture img {
+    background-color: rgb(26, 25, 21); 
+  }
+  .but-left {
+    top: 50px;
+    left: 545px;
+  }
+  .but-right {
+    top: 42px;
+    right: 60px;
+  }
+  .head-text-1 {
+    top: 50px;
+    left: 50px;
+  }
+  .head-text-2{
+    font-size: 52px;
+    top: 216px;
+    left: 125px;
+    line-height: 1;
+    width: 504px;
+  }
+  .head-text-3 {
+    font-size: 24px;
+    left: 140px;
+    top: 330px;
+  }
+  .but-center{
+  left: 226px;
+  bottom: 220px;
+  font-size: 14px;
+  }
+  .section-1 {
+    position: relative;
+    
+  }
+  .text-section {
+    margin: 76px 172px 38px;
+    
+  }
+  .section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .article-section {
+    width: 236px;
+    margin: 0 10px 56px 128px;
+  }
+  .article-section-1{
+    margin: 0 128px 56px 10px ;
+  }
+  .article-section-2{
+    margin: 0 128px 72px 10px ;
+  }
+  .foto-section-1 {
+    right: 118px;
+    bottom: -6px;
+  }
+  .text-section-2 {
+    padding: 0;
+  }
+  .but-sec {
+    margin:0 275px 40px;
+  }
+}
+@media (min-width: 942px) {
+  .container {
+    min-width: 940px;
+    height: auto;
+  }
+  .picture img {
+    background-color: rgb(26, 25, 21); 
+  }
+  .but-left {
+    top: 26px;
+    left: 660px;
+  }
+  .but-right {
+    top: 16px;
+    right: 138px;
+  }
+  .head-text-1 {
+    top: 26px;
+    left: 154px;
+  }
+  .head-text-2{
+    font-size: 52px;
+    top: 115px;
+    left: 250px;
+    line-height: 1;
+    width: 504px;
+  }
+  .head-text-3 {
+    font-size: 24px;
+    left: 254px;
+    top: 215px;
+  }
+  .but-center{
+    left: 390px;
+    bottom: 130px;
+    padding: 10px 30px;
+  font-size: 14px;
+  }
+  .section-1 {
+    position: relative;
+    
+  }
+  .text-section {
+    margin: 0 auto;
+    padding: 74px 30px 36px;
+  }
+  .section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .article-section {
+    width: 220px;
+  }
+  .spec-m-1 {
+    margin: 0 10px 0 0;
+  }
+  .spec-m-2 {
+    margin: 0 10px 0 10px;
+  }
+  .spec-m-3 {
+    margin: 0 0 0 10px;
+  }
+  
+  .foto-section-1 {
+    right: 42px;
+    bottom: -6px;
+  }
+  .text-section-2 {
+    padding: 0 0 60px;
+  }
+  .but-sec {
+    width: 190px;
+    margin: 0 auto;
+    margin-bottom: 74px;
+  }
+
+
+
+}
