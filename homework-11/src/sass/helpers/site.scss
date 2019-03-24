@@ -1,0 +1,39 @@
+
+.site {
+  margin: 0 auto;
+  margin-bottom: 114px;
+}
+
+.site__baner {
+  position: relative;
+}
+.site__section {
+  width: 100%;
+  margin-top: 130px;
+  margin-left: 10px;
+}
+
+.site--text {
+  color: $color-text;
+  font-size: 24px;
+  text-align: center;
+  font-family: $page-text;
+  margin: 0;
+  padding-bottom: 26px;
+  line-height: 28px;
+}
+.site--news {
+  color: $color-text;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+  padding-bottom: 42px;
+}
+.site-team__text {
+  padding: 46px 130px 96px;
+  margin: 0;
+  font-size: 15px;
+  text-align: center;
+  color: $secondary-color;
+}

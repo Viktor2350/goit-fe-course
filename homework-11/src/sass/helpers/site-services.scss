@@ -1,0 +1,41 @@
+.site-services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 94px;
+}
+.site-services__bloc {
+  position: relative;
+  width: 382px;
+  height: 80px;
+  padding: 0;
+  margin-bottom: 102px;
+
+  &--item {
+    margin: 0;
+  }
+}
+
+.site-services__text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  margin-left: 80px;
+
+  &--item1 {
+    font-size: 14px;
+    padding-bottom: 22px;
+  }
+
+  &--item2 {
+    width: 330px;
+    font-size: 15px;
+    margin: 0;
+    color: $secondary-color;
+  }
+
+}
+
