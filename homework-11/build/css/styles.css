@@ -647,7 +647,7 @@ input {
   justify-content: center;
   width: 55px;
   height: 55px;
-  background: yellow;
+  background: #fce38a;
   text-align: center;
   line-height: 55px;
   vertical-align: middle;
@@ -657,8 +657,6 @@ input {
 .site-team__svg:hover {
   cursor: pointer;
   background: #f38181;
-  -webkit-transform: translate(-10px, -10px);
-  transform: translate(-10px, -10px);
 }
 
 .site-team__svg:hover svg {
