@@ -2,26 +2,29 @@
 
 //Задача 1
 
-
 let input;
 const numbers = [];
 let total = 0;
 
-do{
-  input = prompt('Введите число: ');  
+while (true){
+  input = prompt('Введите число: ');
+  if(input === null) {
+    break;
+  }
   input = Number(input);
-  numbers.push(input);
-} while (input !== 0);
-numbers.pop(input);
-console.log('Введены числа', numbers);
-
-for ( let i = 0; i < numbers.length; i += 1) {
-  total += numbers[i];  
+  if(Number.isNaN(input)) {
+    alert('Было введено не число, попробуйте ещё раз!');
+  } else {
+    numbers.push(input);    
+  }
 }
 
-if (numbers.length >= 1){
-  alert(`Общая сумма чисел равна ${total}`);
-} 
+  if (numbers.length){
+    for (const element of numbers ) {
+    total += element;  
+  }
+  console.log(`Общая сумма чисел равна ${total}`);
+}
 
 
 
@@ -38,20 +41,17 @@ do {
   if (userPassword === null) {
     break;
   }
-    for(let password of passwords){
-    if (userPassword === password) {
+    if (passwords.includes(userPassword)) {
     alert('Добро пожаловать!');
     break;
     }
-  }
-
   attemptsLeft -= 1;
 
-  if (attemptsLeft > 0) { 
+  if (attemptsLeft) { 
     alert (`Неверный пароль, у вас осталось ${attemptsLeft} попыток`)
   } else {
     alert ('У вас закончились попытки, аккаунт заблокирован!');
   }
 
-} while (attemptsLeft > 0);
+} while (attemptsLeft);
 
