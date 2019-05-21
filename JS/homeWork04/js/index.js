@@ -22,7 +22,7 @@ const notepad = {
      * Принимает: идентификатор заметки
      * Возвращает: заметку с совпавшим полем id или undefined если ничего не найдено
      */
-    for (let i=0; i < notepad.notes.length; i+=1){
+    for (let i of notepad.notes.length){
       const note = notepad.notes[i];
       if(note.id === id) return note;
     }
@@ -35,15 +35,15 @@ const notepad = {
      * Принимает: объект заметки
      * Возвращает: сохраненную заметку
      */
-    if (note.id !== undefined) {
-      for (let i=0; i < notepad.notes.length; i+=1){
-        const message = 'Такая заметка уже сохранена';
-        if(notepad.notes[i].id === note.id) return message;
-      }
+    // if (note.id !== undefined) {
+    //   for (let i=0; i < notepad.notes.length; i+=1){
+    //     const message = 'Такая заметка уже сохранена';
+    //     if(notepad.notes[i].id === note.id) return message;
+    //   }
   
       notepad.notes.push(note);
       return note;
-    }
+    // }
     
   },
   deleteNote(id) {
@@ -53,9 +53,9 @@ const notepad = {
      * Принимает: идентификатор заметки
      * Возвращает: ничего
      */
-    for (let i=0; i < notepad.notes.length; i+=1){
-      const note = notepad.notes[i];
-      if(note.id === id) notepad.notes.splice(i, 1);
+    for (let note of notepad.notes){
+      const note = notepad.notes;
+      if(note.id === id) notepad.notes.splice(note, 1);
     }
   },
   updateNoteContent(id, updatedContent) {
@@ -68,30 +68,28 @@ const notepad = {
      * Возвращает: обновленную заметку
      */
 
-    for (let i=0; i < notepad.notes.length; i+=1){
-      if(notepad.notes[i].id === id) {
-        notepad.notes[i] = {
-          ...notepad.notes[i],
-          ...updatedContent
-        }
-        return notepad.notes[i];
+    for (let note of notepad.notes){
+      if(notepad.notes.id === id) {
+        Object.assign(note, updatedContent);
+        return notepad.notes;
       };
     }
 
     
   },
+  
   updateNotePriority(id, priority) {
     /*
      * Обновляет приоритет заметки
      *
      * Принимает: идентификатор заметки и ее новый приоритет
      * Возвращает: обновленную заметку
-     */
+     */ 
 
-    for (let i=0; i < notepad.notes.length; i+=1){
-      if(notepad.notes[i].id === id) {
-        notepad.notes[i].priority = priority;
-        return notepad.notes[i]
+    for (let note of notepad.notes){
+      if(notepad.notes.id === id) {
+        notepad.notes.priority = priority;
+        return notepad.notes;
       };
     }
   },
@@ -106,8 +104,7 @@ const notepad = {
      */
 
      const newNotes = [];
-    for (let i=0; i < notepad.notes.length; i+=1){
-      let note = notepad.notes[i];
+    for (let note of notepad.notes){
       if (note.title.includes(query) || note.body.includes(query)) newNotes.push(note);
     }
     return newNotes;
@@ -122,13 +119,13 @@ const notepad = {
      */
 
     const newNotes = [];
-    for (let i=0; i < notepad.notes.length; i+=1){
-      let note = notepad.notes[i];
-      if (note.priority === priority) newNotes.push(note);
+    for (let i of notepad.notes){
+      if (i.priority === priority) newNotes.push(i);
     }
     return newNotes;
   },
 };
+
 
 /*
  * Добавляю 4 заметки и смотрю что получилось
