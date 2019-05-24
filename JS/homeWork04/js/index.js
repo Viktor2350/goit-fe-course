@@ -13,7 +13,7 @@ const notepad = {
      * Принимает: ничего
      * Возвращает: все заметки, значение свойства notes
      */
-    return notepad.notes;
+    return this.notes;
   },
   findNoteById(id) {
     /*
@@ -22,8 +22,7 @@ const notepad = {
      * Принимает: идентификатор заметки
      * Возвращает: заметку с совпавшим полем id или undefined если ничего не найдено
      */
-    for (let i of notepad.notes.length){
-      const note = notepad.notes[i];
+    for (let note of this.notes){
       if(note.id === id) return note;
     }
 
@@ -41,7 +40,7 @@ const notepad = {
     //     if(notepad.notes[i].id === note.id) return message;
     //   }
   
-      notepad.notes.push(note);
+      this.notes.push(note);
       return note;
     // }
     
@@ -53,10 +52,9 @@ const notepad = {
      * Принимает: идентификатор заметки
      * Возвращает: ничего
      */
-    for (let note of notepad.notes){
-      const note = notepad.notes;
-      if(note.id === id) notepad.notes.splice(note, 1);
-    }
+      const note = this.findNoteById(id);
+      if(note.id === id) this.notes.splice(note, 1);
+    
   },
   updateNoteContent(id, updatedContent) {
     /*
@@ -68,10 +66,10 @@ const notepad = {
      * Возвращает: обновленную заметку
      */
 
-    for (let note of notepad.notes){
+    for (let note of this.notes){
       if(notepad.notes.id === id) {
         Object.assign(note, updatedContent);
-        return notepad.notes;
+        return this.notes;
       };
     }
 
@@ -85,13 +83,10 @@ const notepad = {
      * Принимает: идентификатор заметки и ее новый приоритет
      * Возвращает: обновленную заметку
      */ 
-
-    for (let note of notepad.notes){
-      if(notepad.notes.id === id) {
-        notepad.notes.priority = priority;
-        return notepad.notes;
-      };
-    }
+     const note = this.findNoteById(id);
+     note.priority = priority;
+      return note;
+      
   },
 
   filterNotesByQuery(query) {
@@ -104,8 +99,8 @@ const notepad = {
      */
 
      const newNotes = [];
-    for (let note of notepad.notes){
-      if (note.title.includes(query) || note.body.includes(query)) newNotes.push(note);
+    for (let note of this.notes){
+      if (note.title.toLowerCase().includes(query.toLowerCase()) || note.body.toLowerCase().includes(query.toLowerCase())) newNotes.push(note);
     }
     return newNotes;
  },
@@ -119,7 +114,7 @@ const notepad = {
      */
 
     const newNotes = [];
-    for (let i of notepad.notes){
+    for (let i of this.notes){
       if (i.priority === priority) newNotes.push(i);
     }
     return newNotes;
