@@ -107,8 +107,7 @@ console.log(getUsersByEyeColor(users, 'blue')); // [объект Moore Hensley, 
 const getUsersByGender = (users, gender) => {
   // твой код
   const usersGender = users.filter(user => user.gender === gender)
-  return usersGender.reduce((filter, name) => {filter.push(name.name)
-  return filter}, [])
+  return usersGender.map(user => user.name)
 };
 
 console.log(getUsersByGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
@@ -151,10 +150,9 @@ console.log(getTotalBalance(users)); // 20916
 
 const getUsersByFriend = (users, name) => {
   // твой код
-  const usersByFriend = users.filter(user => user.friends[0] === name || user.friends[1] === name)
-  return usersByFriend.reduce((filter, name) => {filter.push(name.name)
-  return filter}, [])
-
+  const usersByFriend = users.filter(user => user.friends.includes(name));
+  const userName = usersByFriend.map(user => user.name);
+  return userName;
 };
 
 console.log(getUsersByFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
