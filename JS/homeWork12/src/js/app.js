@@ -37,7 +37,7 @@ const handleSubmit = event => {
   newObj.id = shortid.generate();
   newObj.title = formTitle.value;
   newObj.body = formBody.value;
-  newObj.priority = Notepad.Priority.LOW;
+  newObj.priority = model.Priority.LOW;
 
   notepadModel.saveNote(newObj)
   .then(() => {
